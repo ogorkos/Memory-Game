@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Indie+Flower&family=Pacifico&display=swap" rel="stylesheet">
+	
+	<link rel="stylesheet" href="./Css/style.css">
+	<title>Document</title>
+</head>
+<body>
+	<!-- <div class="bg"></div> -->
+	<div class="section__menu">
+		<div class="sec_menu_rel">
+			<a id="burgerMenu" onclick="burgerMenu()" href="#" class="burger__menu">
+				<span class="burger"></span>
+			</a>
+			<nav id="menu" class="menu">
+					<a href="#" id="restart" onclick="restart()"><img src="./images/icons8-restart-48_white.png" alt="Restart">Restart</a>
+					<a href="#" id="quit" onclick="quit()"><img src="./images/icons8-sign-out-48_white.png" alt="Quit">Quit</a>
+			</nav>
+		</div>
+	</div>
+	<div id="levels" class="levels">
+		<h1>Memory game</h1>
+		<p>Choise level:</p>
+		<ul>
+			<li onclick="easy()" ><a href="#">Easy</a></li>
+			<li onclick="middle()"><a href="#">Middle</a></li>
+			<li onclick="hard()"><a href="#">Hard</a></li>
+		</ul>
+	</div>
+	<div id="car" class="car">
+		<img src="./images/world-cars-big-2.png" alt="">
+	</div>
+	<section id="sectionCards">
+		<div id="card_1" onclick="card(1)" class="card">
+			<div class="box">
+				<div class="imgBx">
+					<img src="./images/face_card.jpg" alt="">
+				</div>
+				<div id="contentBx_1" class="contentBx">
+					<p id="txt_1"></p>
+				</div>
+			</div>
+		</div>
+
+		<div id="card_2" onclick="card(2)" class="card">
+			<div class="box">
+				<div class="imgBx">
+					<img src="./images/face_card.jpg" alt="">
+				</div>
+				<div id="contentBx_2"  class="contentBx">
+					<p id="txt_2"></p>
+				</div>
+			</div>
+		</div>
+
+		<div id="card_3" onclick="card(3)" class="card">
+			<div class="box">
+				<div class="imgBx">
+					<img src="./images/face_card.jpg" alt="">
+				</div>
+				<div id="contentBx_3" class="contentBx">
+					<p id="txt_3"></p>
+				</div>
+			</div>
+		</div>
+
+		<div id="card_4" onclick="card(4)" class="card">
+			<div class="box">
+				<div class="imgBx">
+					<img src="./images/face_card.jpg" alt="">
+				</div>
+				<div id="contentBx_4" class="contentBx">
+					<p id="txt_4"></p>
+				</div>
+			</div>
+		</div>
+
+		<div id="card_5" onclick="card(5)" class="card">
+			<div class="box">
+				<div class="imgBx">
+					<img src="./images/face_card.jpg" alt="">
+				</div>
+				<div id="contentBx_5" class="contentBx">
+					<p id="txt_5"></p>
+				</div>
+			</div>
+		</div>
+
+		<div id="card_6" onclick="card(6)" class="card">
+			<div class="box">
+				<div class="imgBx">
+					<img src="./images/face_card.jpg" alt="">
+				</div>
+				<div id="contentBx_6"class="contentBx">
+					<p id="txt_6"></p>
+				</div>
+			</div>
+		</div>
+		<div id="card_7" onclick="card(7)" class="card">
+			<div class="box">
+				<div class="imgBx">
+					<img src="./images/face_card.jpg" alt="">
+				</div>
+				<div id="contentBx_7" class="contentBx">
+					<p id="txt_7"></p>
+				</div>
+			</div>
+		</div>
+
+		<div id="card_8" onclick="card(8)" class="card">
+			<div class="box">
+				<div class="imgBx">
+					<img src="./images/face_card.jpg" alt="">
+				</div>
+				<div id="contentBx_8"  class="contentBx">
+					<p id="txt_8"></p>
+				</div>
+			</div>
+		</div>
+
+		<div id="card_9" onclick="card(9)" class="card">
+			<div class="box">
+				<div class="imgBx">
+					<img src="./images/face_card.jpg" alt="">
+				</div>
+				<div id="contentBx_9" class="contentBx">
+					<p id="txt_9"></p>
+				</div>
+			</div>
+		</div>
+
+		<div id="card_10" onclick="card(10)" class="card">
+			<div class="box">
+				<div class="imgBx">
+					<img src="./images/face_card.jpg" alt="">
+				</div>
+				<div id="contentBx_10" class="contentBx">
+					<p id="txt_10"></p>
+				</div>
+			</div>
+		</div>
+
+		<div id="card_11" onclick="card(11)" class="card">
+			<div class="box">
+				<div class="imgBx">
+					<img src="./images/face_card.jpg" alt="">
+				</div>
+				<div id="contentBx_11" class="contentBx">
+					<p id="txt_11"></p>
+				</div>
+			</div>
+		</div>
+
+		<div id="card_12" onclick="card(12)" class="card">
+			<div class="box">
+				<div class="imgBx">
+					<img src="./images/face_card.jpg" alt="">
+				</div>
+				<div id="contentBx_12"class="contentBx">
+					<p id="txt_12"></p>
+				</div>
+			</div>
+		</div>
+		
+		<div id="card_13" onclick="card(13)" class="card">
+			<div class="box">
+				<div class="imgBx">
+					<img src="./images/face_card.jpg" alt="">
+				</div>
+				<div id="contentBx_13"class="contentBx">
+					<p id="txt_13"></p>
+				</div>
+			</div>
+		</div>
+		
+		<div id="card_14" onclick="card(14)" class="card">
+			<div class="box">
+				<div class="imgBx">
+					<img src="./images/face_card.jpg" alt="">
+				</div>
+				<div id="contentBx_14"class="contentBx">
+					<p id="txt_14"></p>
+				</div>
+			</div>
+		</div>
+		
+		<div id="card_15" onclick="card(15)" class="card">
+			<div class="box">
+				<div class="imgBx">
+					<img src="./images/face_card.jpg" alt="">
+				</div>
+				<div id="contentBx_15"class="contentBx">
+					<p id="txt_15"></p>
+				</div>
+			</div>
+		</div>
+		
+		
+		<div id="card_16" onclick="card(16)" class="card">
+			<div class="box">
+				<div class="imgBx">
+					<img src="./images/face_card.jpg" alt="">
+				</div>
+				<div id="contentBx_16"class="contentBx">
+					<p id="txt_16"></p>
+				</div>
+			</div>
+		</div>
+		
+		
+		<div id="card_17" onclick="card(17)" class="card">
+			<div class="box">
+				<div class="imgBx">
+					<img src="./images/face_card.jpg" alt="">
+				</div>
+				<div id="contentBx_17"class="contentBx">
+					<p id="txt_17"></p>
+				</div>
+			</div>
+		</div>
+		
+		<div id="card_18" onclick="card(18)" class="card">
+			<div class="box">
+				<div class="imgBx">
+					<img src="./images/face_card.jpg" alt="">
+				</div>
+				<div id="contentBx_18"class="contentBx">
+					<p id="txt_18"></p>
+				</div>
+			</div>
+		</div>
+		
+
+		<div id="card_19" onclick="card(19)" class="card">
+			<div class="box">
+				<div class="imgBx">
+					<img src="./images/face_card.jpg" alt="">
+				</div>
+				<div id="contentBx_19"class="contentBx">
+					<p id="txt_19"></p>
+				</div>
+			</div>
+		</div>
+		
+		
+		<div id="card_20" onclick="card(20)" class="card">
+			<div class="box">
+				<div class="imgBx">
+					<img src="./images/face_card.jpg" alt="">
+				</div>
+				<div id="contentBx_20"class="contentBx">
+					<p id="txt_20"></p>
+				</div>
+			</div>
+		</div>
+		
+		</section>
+		<div class="finish">
+			<p id="win"></p>
+			<p id="counterClicks"></p>
+		</div>
+
+
+	<script>
+var Models=["audi","bmw","mersedes","shevrole","toyota","Hundai","Maserati","Nissan","Bentley","Tesla"];
+var Urls=["1","2","3","4","5","6","7","8","9","10"];
+var numCards;// Число карточек 6 / 8 / 10
+var maxRundoNum = 1000;
+
+var arrWorkCards = [];
+var clickMenu=0;
+var clickNum=0;
+var cardOpen1="";
+var cardOpen2="";
+var numberOpenCard1=0;
+var numberOpenCard2=0;
+var counterClose2Cards=0;
+var checkCloseCards=0;//    0 - Close,    1- Open   --- Чтобы не открывалась третья карточка при быстром нажатии
+var counterClicks=0;
+
+//-----------burgerMenu---------------------------------------------------
+
+function burgerMenu(){
+	if (clickMenu==0){
+		document.getElementById("menu").classList.add("menu_active");
+		document.getElementById("burgerMenu").classList.add("burger__menu_active");
+		clickMenu=1;
+	} else {
+		document.getElementById("menu").classList.remove("menu_active");
+		document.getElementById("burgerMenu").classList.remove("burger__menu_active");
+		clickMenu=0;
+	}
+}
+function fullZero(){
+	arrWorkCards = [];
+	clickMenu=0;
+	clickNum=0;
+	cardOpen1="";
+	cardOpen2="";
+	numberOpenCard1=0;
+	numberOpenCard2=0;
+	counterClose2Cards=0;
+	checkCloseCards=0;//    0 - Close,    1- Open   --- Чтобы не открывалась третья карточка при быстром нажатии
+	counterClicks=0;
+}
+function deleteActiveOneCard(){
+	var className="card_"+numberOpenCard1;
+	console.log("className="+className);
+	if (clickNum==1){
+		document.getElementById(className).classList.remove("active");
+	}
+}
+function restart(){
+	deleteActiveOneCard()
+	fullZero();
+	createArrNumbers(numCards);
+	sort();
+	ratingNumbers(arrWorkCards);
+	fillCards(arrWorkCards);
+	closeWindowsStart();
+	document.getElementById("win").innerHTML="";
+	document.getElementById("counterClicks").innerHTML="";
+	document.getElementById("menu").classList.remove("menu_active");
+	document.getElementById("burgerMenu").classList.remove("burger__menu_active");
+	clickMenu=0;
+}
+function quit(){
+	deleteActiveOneCard()
+	nonDisplayCarts(arrWorkCards);
+	fullZero();
+	document.getElementById("menu").classList.remove("menu_active");
+	document.getElementById("burgerMenu").classList.remove("burger__menu_active");
+	clickMenu=0;
+	document.getElementById("sectionCards").style.display="none";
+	document.getElementById("levels").style.display="block";
+	document.getElementById("car").style.display="block";
+	document.getElementById("win").innerHTML="";
+	document.getElementById("counterClicks").innerHTML="";
+}
+function closeWindowsStart(){
+	document.getElementById("sectionCards").style.display="flex";
+	document.getElementById("levels").style.display="none";
+	document.getElementById("car").style.display="none";
+}
+// ------------Выбор уровня-----------------------------------------------
+function easy(){
+	numCards=6;
+	arrWorkCards=[];
+	// console.log(numCards);
+	createArrNumbers(numCards);
+	// displayCars(arrWorkCards,"demo1") //before sort
+	sort();
+	// displayCars(arrWorkCards,"demo2")	//After sort
+	ratingNumbers(arrWorkCards);
+	// displayCars(arrWorkCards,"demo3")	//After rating
+	// console.log(arrWorkCards);
+	fillCards(arrWorkCards);
+	closeWindowsStart();
+}
+function middle(){
+	numCards=8;
+	arrWorkCards=[];
+	// console.log(numCards);
+
+	createArrNumbers(numCards);
+	sort();
+	ratingNumbers(arrWorkCards);
+	fillCards(arrWorkCards);
+	// console.log(arrWorkCards);
+	closeWindowsStart();
+}
+function hard(){
+	numCards=10;
+	arrWorkCards=[];
+	// console.log(numCards);
+
+	createArrNumbers(numCards);
+	sort();
+	ratingNumbers(arrWorkCards);
+	fillCards(arrWorkCards);
+	// console.log(arrWorkCards);
+	closeWindowsStart();
+}
+
+
+//-------------Логика массива-------------------------------------------------
+
+
+//-------Создаем массив----------------
+function createArrNumbers(numCards){
+for (i=0;i<numCards;i++){
+	// console.log(numCards);
+var card={
+	Model:Models[i],
+	Url:i+1,
+	number:rundNumb(maxRundoNum),//--Случайное число для определения номера первой карточки после сортировки
+	}
+var card1={
+	Model:Models[i],
+	Url:i+1,
+	number:rundNumb(maxRundoNum),//--Случайное число для определения номера первой карточки после сортировки
+	}
+arrWorkCards[i]=card;//создаем новый массив для работы
+arrWorkCards[i+numCards]=card1;//создаем новый массив для работы
+			// console.log(card);
+			// console.log(card1);
+}
+console.log(arrWorkCards);
+}
+//--------создаем случайные числа---------
+function rundNumb(max){
+	return Math.floor(Math.random() * max);
+}
+
+//------Сортировка массива ---
+function sort() {
+arrWorkCards.sort(function(a, b){return a.number - b.number});
+}
+//---------Print Array------------
+// function displayCars(cars,nameId) {
+// var txt="";
+// for (i=0;i<cars.length ;i++){
+// txt+=cars[i].Model + " - " + cars[i].Url + " - " + cars[i].number + "<br>";
+// }
+// document.getElementById(nameId).innerHTML = txt;
+// }
+//---------Определение порядка карточки----------
+function ratingNumbers(arr){
+for (i=0;i<arr.length ;i++){
+	arr[i].number = i+1;
+}
+}
+
+
+//-------------Заполнение карточек-------------------------------------
+
+
+//------заполнение карточек------------
+function fillCards(arr){
+	// console.log("arr.length="+arr.length);
+	for (i=1;i<arr.length+1 ;i++){
+		var numPosInArr=i-1;
+		var numCard = arr[numPosInArr].Url;
+		var txtCard = arr[numPosInArr].Model;
+		changeBackground(i,numCard);
+		changeText(i,txtCard)
+		displayCarts(i);
+	} 
+}
+//------Меняет Background для карточки---------
+function changeBackground(i,j){
+	var idName="contentBx_"+i;
+	var bgName = "url(./images/img"+j+".jpg)  0 0/cover no-repeat";
+	document.getElementById(idName).style.background = bgName;
+} 
+//------Показываем карточку-------------
+function displayCarts(i){
+	var className="card_"+i;
+	var element = document.getElementById(className);
+	// console.log(className);
+	// console.log(numCards);
+	if (numCards==6){
+		// console.log("true");
+		element.classList.add("card__easy");
+	} else {
+		// console.log("false");
+		element.classList.remove("card__easy");
+	};
+	if (numCards==8){
+		// console.log("true");
+		element.classList.add("card__middle");
+	} else {
+		// console.log("false");
+		element.classList.remove("card__middle");
+	};
+
+	document.getElementById(className).style.display="block";
+	document.getElementById(className).style.visibility="visible";
+}
+//------Не показываем карточку-------------
+function nonDisplayCarts(arr){
+	for (i=1;i<arr.length+1 ;i++){	
+		var className="card_"+i;
+		document.getElementById(className).style.display="none";
+		document.getElementById(className).style.visibility="hidden";
+	}
+}
+//------Меняет Текст для карточки---------
+	function changeText(i,txt){
+	var idName="txt_"+i;
+	document.getElementById(idName).innerHTML= txt;
+} 
+//-Добавляет первой нажатой карточке класс active (запускается нажатием карточки)------------
+function card(i){
+	var className="card_"+i;
+	var element = document.getElementById(className);
+	if (checkCloseCards==0){
+		element.classList.add("active");
+		counterClicks=counterClicks+1; //Считаем нажатия на карточки
+		if (clickNum == 0){
+			numberOpenCard1=i;
+			// console.log("numberOpenCard1="+numberOpenCard1);
+			clickNum+=1;
+					// console.log("clickNum="+clickNum);	
+			cardOpen1=arrWorkCards[numberOpenCard1-1].Model;
+					// console.log("cardOpen1="+cardOpen1);
+		} 
+		else {
+			if (numberOpenCard1!=i){
+			numberOpenCard2=i;
+					// console.log("numberOpenCard2="+numberOpenCard2);
+			cardOpen2=arrWorkCards[numberOpenCard2-1].Model;
+					// console.log("cardOpen2="+cardOpen2);
+			clickNum = 0;
+			// cardOpenCheck();
+			checkCloseCards=1;
+			setTimeout(cardOpenCheck,800);
+		}
+		}
+	}
+}
+//--------Проверка открытых карточек-----------------
+function cardOpenCheck() {
+	var cardClassName1="card_"+numberOpenCard1;
+	var cardClassName2="card_"+numberOpenCard2;
+	// console.log("cardClassName1="+cardClassName1);
+	// console.log("cardClassName2="+cardClassName2);
+	
+		if (cardOpen1==cardOpen2){
+			// alert("=");
+			document.getElementById(cardClassName1).style.visibility = "hidden";
+			document.getElementById(cardClassName2).style.visibility = "hidden";
+			document.getElementById(cardClassName1).classList.remove("active");
+			document.getElementById(cardClassName2).classList.remove("active");
+			counterClose2Cards=counterClose2Cards+1; //Считаем пары закрытых карточек
+		}
+		else {
+			// alert("<>");
+			document.getElementById(cardClassName1).classList.remove("active");
+			document.getElementById(cardClassName2).classList.remove("active");
+		}
+		zeroOpenCards();
+	
+	if (counterClose2Cards==numCards){
+		setTimeout(Finish,500);
+	}
+}
+function zeroOpenCards(){
+	cardOpen1=0;
+	cardOpen2=0;
+	numberOpenCard1=0;
+	numberOpenCard2=0;
+	checkCloseCards=0;
+}
+//--------Поздравление-----------------
+function Finish(){
+		document.getElementById("win").innerHTML="Congratulations!<br>You win!";
+		document.getElementById("counterClicks").innerHTML=counterClicks+" Clicks";
+		document.getElementById("menu").classList.add("menu_active");
+		document.getElementById("burgerMenu").classList.add("burger__menu_active");
+}
+	</script>
+	
+</body>
+</html>
