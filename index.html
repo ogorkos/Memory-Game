@@ -9,7 +9,7 @@
 	<title>Document</title>
 </head>
 <body>
-	<!-- <div class="bg"></div> -->
+	<!-- Created 24-08-2020 -->
 	<div class="section__menu">
 		<div class="sec_menu_rel">
 			<a id="burgerMenu" onclick="burgerMenu()" href="#" class="burger__menu">
@@ -349,39 +349,30 @@ function closeWindowsStart(){
 function easy(){
 	numCards=6;
 	arrWorkCards=[];
-	// console.log(numCards);
 	createArrNumbers(numCards);
-	// displayCars(arrWorkCards,"demo1") //before sort
 	sort();
-	// displayCars(arrWorkCards,"demo2")	//After sort
 	ratingNumbers(arrWorkCards);
-	// displayCars(arrWorkCards,"demo3")	//After rating
-	// console.log(arrWorkCards);
 	fillCards(arrWorkCards);
 	closeWindowsStart();
 }
 function middle(){
 	numCards=8;
 	arrWorkCards=[];
-	// console.log(numCards);
 
 	createArrNumbers(numCards);
 	sort();
 	ratingNumbers(arrWorkCards);
 	fillCards(arrWorkCards);
-	// console.log(arrWorkCards);
 	closeWindowsStart();
 }
 function hard(){
 	numCards=10;
 	arrWorkCards=[];
-	// console.log(numCards);
 
 	createArrNumbers(numCards);
 	sort();
 	ratingNumbers(arrWorkCards);
 	fillCards(arrWorkCards);
-	// console.log(arrWorkCards);
 	closeWindowsStart();
 }
 
@@ -392,7 +383,6 @@ function hard(){
 //-------Создаем массив----------------
 function createArrNumbers(numCards){
 for (i=0;i<numCards;i++){
-	// console.log(numCards);
 var card={
 	Model:Models[i],
 	Url:i+1,
@@ -405,10 +395,7 @@ var card1={
 	}
 arrWorkCards[i]=card;//создаем новый массив для работы
 arrWorkCards[i+numCards]=card1;//создаем новый массив для работы
-			// console.log(card);
-			// console.log(card1);
 }
-console.log(arrWorkCards);
 }
 //--------создаем случайные числа---------
 function rundNumb(max){
@@ -419,14 +406,6 @@ function rundNumb(max){
 function sort() {
 arrWorkCards.sort(function(a, b){return a.number - b.number});
 }
-//---------Print Array------------
-// function displayCars(cars,nameId) {
-// var txt="";
-// for (i=0;i<cars.length ;i++){
-// txt+=cars[i].Model + " - " + cars[i].Url + " - " + cars[i].number + "<br>";
-// }
-// document.getElementById(nameId).innerHTML = txt;
-// }
 //---------Определение порядка карточки----------
 function ratingNumbers(arr){
 for (i=0;i<arr.length ;i++){
@@ -440,7 +419,6 @@ for (i=0;i<arr.length ;i++){
 
 //------заполнение карточек------------
 function fillCards(arr){
-	// console.log("arr.length="+arr.length);
 	for (i=1;i<arr.length+1 ;i++){
 		var numPosInArr=i-1;
 		var numCard = arr[numPosInArr].Url;
@@ -460,20 +438,14 @@ function changeBackground(i,j){
 function displayCarts(i){
 	var className="card_"+i;
 	var element = document.getElementById(className);
-	// console.log(className);
-	// console.log(numCards);
 	if (numCards==6){
-		// console.log("true");
 		element.classList.add("card__easy");
 	} else {
-		// console.log("false");
 		element.classList.remove("card__easy");
 	};
 	if (numCards==8){
-		// console.log("true");
 		element.classList.add("card__middle");
 	} else {
-		// console.log("false");
 		element.classList.remove("card__middle");
 	};
 
@@ -502,20 +474,14 @@ function card(i){
 		counterClicks=counterClicks+1; //Считаем нажатия на карточки
 		if (clickNum == 0){
 			numberOpenCard1=i;
-			// console.log("numberOpenCard1="+numberOpenCard1);
 			clickNum+=1;
-					// console.log("clickNum="+clickNum);	
 			cardOpen1=arrWorkCards[numberOpenCard1-1].Model;
-					// console.log("cardOpen1="+cardOpen1);
 		} 
 		else {
 			if (numberOpenCard1!=i){
 			numberOpenCard2=i;
-					// console.log("numberOpenCard2="+numberOpenCard2);
 			cardOpen2=arrWorkCards[numberOpenCard2-1].Model;
-					// console.log("cardOpen2="+cardOpen2);
 			clickNum = 0;
-			// cardOpenCheck();
 			checkCloseCards=1;
 			setTimeout(cardOpenCheck,800);
 		}
@@ -526,11 +492,8 @@ function card(i){
 function cardOpenCheck() {
 	var cardClassName1="card_"+numberOpenCard1;
 	var cardClassName2="card_"+numberOpenCard2;
-	// console.log("cardClassName1="+cardClassName1);
-	// console.log("cardClassName2="+cardClassName2);
 	
 		if (cardOpen1==cardOpen2){
-			// alert("=");
 			document.getElementById(cardClassName1).style.visibility = "hidden";
 			document.getElementById(cardClassName2).style.visibility = "hidden";
 			document.getElementById(cardClassName1).classList.remove("active");
@@ -538,7 +501,6 @@ function cardOpenCheck() {
 			counterClose2Cards=counterClose2Cards+1; //Считаем пары закрытых карточек
 		}
 		else {
-			// alert("<>");
 			document.getElementById(cardClassName1).classList.remove("active");
 			document.getElementById(cardClassName2).classList.remove("active");
 		}
